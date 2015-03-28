@@ -11,6 +11,9 @@ Hopefully it works then
 
 public class Main
 {
-
-
+    public static void main(String[] args) {
+        Rectangle screenRect = new Rectangle(Toolkit.getDefaultToolkit().getScreenSize());
+        BufferedImage capture = new Robot().createScreenCapture(screenRect);
+        ImageIO.write(capture, "bmp", new File(args[0]));
+    }
 }
