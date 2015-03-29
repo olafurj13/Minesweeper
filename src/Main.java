@@ -1,6 +1,8 @@
 import java.awt.*;
 import java.awt.image.*;
 import java.util.*;
+import java.awt.Robot;
+import java.awt.event.InputEvent;
 
 /*
 Initial setup to get working:
